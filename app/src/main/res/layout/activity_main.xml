@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFF"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.praktikum9bethari.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Cek Berat Badan" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/editnama"
+        android:text="Tinggi" />
+
+    <EditText
+        android:id="@+id/editberat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editnama"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editBerat" />
+
+    <TextView
+        android:id="@+id/editBerat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edittinggi"
+        android:layout_below="@+id/edittinggi"
+        android:text="Berat Badan" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btncek"
+        android:layout_below="@+id/editberat"
+        android:text="Jenis Kelamin" />
+
+    <EditText
+        android:id="@+id/edittinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editberat"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_toStartOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/hasilideal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/rdbPerempuan"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/hasilket1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/hasilket2"
+            android:layout_alignBottom="@+id/hasilket2"
+            android:layout_alignParentStart="true" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btncek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rdbPerempuan"
+        android:text="Cek In" />
+
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnclear"
+        android:text="Exit" />
+
+    <EditText
+        android:id="@+id/hasilideal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/hasilket2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/hasilideal"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_below="@+id/hasilideal"
+        android:layout_toEndOf="@+id/edittinggi" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnclear"
+        android:layout_toEndOf="@+id/editnama"
+        android:text="Hasil Diagnosis" />
+
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btncek"
+        android:layout_alignBottom="@+id/btncek"
+        android:layout_centerHorizontal="true"
+        android:text="Clear" />
+
+    <RadioButton
+        android:id="@+id/rdbLaki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:checked="false"
+        android:text="Laki-laki" />
+
+    <RadioButton
+        android:id="@+id/rdbPerempuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rdbLaki"
+        android:layout_below="@+id/rdbLaki"
+        android:checked="false"
+        android:text="Perempuan" />
+
+    <EditText
+        android:id="@+id/editnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/textView2" />
+
+</RelativeLayout>
+
