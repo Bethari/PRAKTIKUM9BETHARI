@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroup;
     int h1, ti, bt;
     String temp = "";
+    int y;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         rdbperempuan = (RadioButton) findViewById(R.id.rdbPerempuan);
         btnclear = (Button) findViewById(R.id.btnclear);
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+
         btncek.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
